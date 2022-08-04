@@ -26,7 +26,7 @@
             <img src="images/logo.png" alt="" width="125px" />
           </div>
           <nav>
-            <ul>
+            <ul class="menu-items">
               <li><a href="">Home</a></li>
               <li><a href="">Products</a></li>
               <li><a href="">About</a></li>
@@ -35,6 +35,7 @@
             </ul>
           </nav>
           <img src="images/cart.png" width="30px" height="30px" alt="" />
+          <img src="images/menu.png"  class="toggle" alt="">
         </div>
         <div class="row">
           <div class="col-2">
@@ -362,5 +363,15 @@
             <p class="copyright">Copyright &copy 2022</p>
         </div>
     </div>
+    <!--Toggle Menu-->
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.menu-items');
+        toggle.addEventListener('click',() =>{
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        } )  
+    </script>
   </body>
 </html>
+
